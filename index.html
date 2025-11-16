@@ -6,71 +6,92 @@
     <title>winnie247</title>
 
     <style>
-        /* Fullscreen background image */
+        /* Fullscreen background image (kept from your version) */
         body {
             margin: 0;
             padding: 0;
             background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80")
                         no-repeat center center fixed;
             background-size: cover;
-            color: #eee;
-            font-family: "Inter", Arial, sans-serif;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
-        /* Glassmorphism card */
+        /* TRUE Apple-style dark glass (premium) */
         .card {
-            background: rgba(0, 0, 0, 0.65);
-            padding: 40px 50px;
-            border-radius: 16px;
-            text-align: center;
-            max-width: 500px;
+            background: rgba(20, 20, 20, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 28px;
+
+            padding: 50px 60px;
             width: 90%;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
-            backdrop-filter: blur(6px);
+            max-width: 480px;
+
+            backdrop-filter: blur(30px) saturate(160%);
+            -webkit-backdrop-filter: blur(30px) saturate(160%);
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+            text-align: center;
             animation: fadeIn 1s ease-out;
         }
 
+        /* Title – Apple style */
         h1 {
             font-size: 2.4rem;
-            margin-bottom: 15px;
-            color: #4db8ff;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
         }
 
+        /* Subtext */
         p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
+            color: #e6e6e6;
             line-height: 1.5;
             margin-bottom: 20px;
         }
 
-        /* Styled link-buttons */
+        /* Apple-style translucent glowing buttons */
         .button {
             display: block;
             width: 100%;
-            padding: 12px 0;
-            margin: 8px 0;
-            border-radius: 10px;
-            background: #4db8ff;
-            color: #111;
+            padding: 14px 0;
+            margin: 10px 0;
+
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+
+            color: #ffffff;
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: 600;
-            transition: 0.25s;
+
+            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+            backdrop-filter: blur(10px);
+
+            transition: 0.25s ease;
         }
 
+        /* Hover – Apple lift effect */
         .button:hover {
-            background: #80d4ff;
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.28);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
         }
 
+        /* Email highlight */
         .email {
-            color: #ffde59;
+            color: #ffd86b;
             font-weight: 600;
         }
 
+        /* Smooth fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -89,14 +110,14 @@
             🌐 My Discord
         </a>
 
-        <!-- NEW BUTTON LINKS YOU WANTED -->
-       <a href="about_me.html" class="button">About me</a>
-        <a href="#" class="button">Group Chat</a>
+        <!-- NEW BUTTONS YOU WANTED -->
+        <a href="about_me.html" class="button">About me</a>
+        <a href="#" class="button">AWD</a>
         <a href="#" class="button">Physics Thingies</a>
         <a href="#" class="button">Games Thingies</a>
-        <a href="#" class="button">Chemistry Thingies</a>
+        <a href="#" class="button">Other Things</a>
 
-        <p>
+        <p style="margin-top: 28px;">
             Contact me anytime at  
             <span class="email">GDmouse@hotmail.com</span>
         </p>
