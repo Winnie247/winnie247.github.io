@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Hello</title>
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>winnie247</title>
 
-<body>
-<h1>Welcome to my Web Page!!!</h1>
-<p>you can find stuff I have made also some ways to contact me</p>
-<br>
-<a href="https://discord.com/channels/…">My Discord</a><br>
-You can contact me at <b>Ghouse@hotmail.com</b>
-</body>
+    <style>
+        /* 
+           Page background.
+           This uses a high-quality fullscreen image.
+           "cover" = fills the whole screen
+           "center" = centers the image
+           "fixed" = creates a parallax effect when scrolling
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80")
+                        no-repeat center center fixed;
+            background-size: cover;
+            color: #eee;
+            font-family: "Inter", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-</html>
+        /* 
+           The card stays readable by using a dark, semi-transparent background.
+           This lets the background image show through without ruining readability.
+        */
+        .card {
+            background: rgba(0, 0, 0, 0.65);  /* transparent dark overlay */
+            padding: 40px 50px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            backdrop-filter: blur(6px); /
+
