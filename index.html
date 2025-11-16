@@ -6,13 +6,7 @@
     <title>winnie247</title>
 
     <style>
-        /* 
-           Page background.
-           This uses a high-quality fullscreen image.
-           "cover" = fills the whole screen
-           "center" = centers the image
-           "fixed" = creates a parallax effect when scrolling
-        */
+        /* Fullscreen background image */
         body {
             margin: 0;
             padding: 0;
@@ -27,17 +21,85 @@
             height: 100vh;
         }
 
-        /* 
-           The card stays readable by using a dark, semi-transparent background.
-           This lets the background image show through without ruining readability.
-        */
+        /* Glassmorphism card */
         .card {
-            background: rgba(0, 0, 0, 0.65);  /* transparent dark overlay */
+            background: rgba(0, 0, 0, 0.65);
             padding: 40px 50px;
             border-radius: 16px;
             text-align: center;
-            max-width: 450px;
+            max-width: 500px;
             width: 90%;
             box-shadow: 0 0 20px rgba(0,0,0,0.4);
-            backdrop-filter: blur(6px); /
+            backdrop-filter: blur(6px);
+            animation: fadeIn 1s ease-out;
+        }
 
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            color: #4db8ff;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Styled link-buttons */
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            margin: 8px 0;
+            border-radius: 10px;
+            background: #4db8ff;
+            color: #111;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        .button:hover {
+            background: #80d4ff;
+            transform: translateY(-3px);
+        }
+
+        .email {
+            color: #ffde59;
+            font-weight: 600;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>winnie247</h1>
+
+        <p>Welcome to my page — here’s what I build, create, and how to reach me.</p>
+
+        <!-- ORIGINAL DISCORD LINK -->
+        <a href="https://discord.com/users/728452631802429480" target="_blank" class="button">
+            🌐 My Discord
+        </a>
+
+        <!-- NEW BUTTON LINKS YOU WANTED -->
+        <a href="#" class="button">About me</a>
+        <a href="#" class="button">Group Chat</a>
+        <a href="#" class="button">Physics Thingies</a>
+        <a href="#" class="button">Games Thingies</a>
+        <a href="#" class="button">Chemistry Thingies</a>
+
+        <p>
+            Contact me anytime at  
+            <span class="email">Ghouse@hotmail.com</span>
+        </p>
+    </div>
+</body>
+</html>
