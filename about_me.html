@@ -6,72 +6,92 @@
     <title>About Me - winnie247</title>
 
     <style>
+        /* Same fullscreen background as homepage */
         body {
             margin: 0;
             padding: 0;
             background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80")
                         no-repeat center center fixed;
             background-size: cover;
-            color: #eee;
-            font-family: "Inter", Arial, sans-serif;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
+        /* Apple-style dark glass container */
         .card {
-            background: rgba(0, 0, 0, 0.65);
-            padding: 40px 50px;
-            border-radius: 16px;
-            max-width: 600px;
+            background: rgba(20, 20, 20, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 28px;
+
+            padding: 50px 60px;
             width: 90%;
-            text-align: left;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
-            backdrop-filter: blur(6px);
+            max-width: 700px;
+
+            backdrop-filter: blur(30px) saturate(160%);
+            -webkit-backdrop-filter: blur(30px) saturate(160%);
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+            color: #eee;
+
             animation: fadeIn 1s ease-out;
         }
 
         h1 {
-            color: #4db8ff;
-            margin-bottom: 20px;
             text-align: center;
-            font-size: 2.3rem;
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
         }
 
         p {
             font-size: 1.15rem;
             line-height: 1.6;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            color: #e7e7e7;
         }
 
+        /* Back button */
         .back-btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 10px 20px;
-            background: #4db8ff;
-            color: #111;
+            padding: 12px 22px;
+            background: rgba(255, 255, 255, 0.22);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            color: #fff;
             text-decoration: none;
+            font-size: 1.05rem;
             font-weight: 600;
-            border-radius: 10px;
-            transition: 0.25s;
+            border-radius: 14px;
+            margin-top: 30px;
+
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: 0.25s ease;
         }
 
         .back-btn:hover {
-            background: #80d4ff;
-            transform: translateY(-3px);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.34);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
         }
 
+        /* Fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <h1>About Me</h1>
 
+        <!-- YOUR EXACT TEXT (unchanged) -->
         <p>
             Hi! I'm Aiden!.  
             I am a person who justs chats about random things on discord.
