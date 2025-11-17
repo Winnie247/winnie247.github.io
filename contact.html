@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - winnie247</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80")
+                        no-repeat center center fixed;
+            background-size: cover;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #eee;
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 28px;
+            padding: 50px 60px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+
+            backdrop-filter: blur(30px) saturate(160%);
+            -webkit-backdrop-filter: blur(30px) saturate(160%);
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 14px;
+            color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            color: #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        /* Apple-style translucent buttons */
+        .button {
+            display: block;
+            width: 100%;
+            padding: 14px 0;
+            margin: 10px 0;
+
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+
+            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+            backdrop-filter: blur(10px);
+
+            transition: 0.25s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.28);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+        }
+
+        /* Back button */
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: rgba(255, 255, 255, 0.22);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 14px;
+
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: 0.25s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.34);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Contact Me</h1>
+
+        <p>
+            Hi! This is my contact page!  
+            This is where I put ways to contact me :D
+        </p>
+
+        <!-- Four Contact Buttons -->
+        <a href="mailto:GDmouse@hotmail.com" class="button">📧 Email</a>
+        <a href="https://discord.com/users/728452631802429480" class="button">🌐 Discord</a>
+        <a href="#" class="button">📱 Phone (coming soon)</a>
+        <a href="#" class="button">🌐 Socials (coming soon)</a>
+
+        <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
