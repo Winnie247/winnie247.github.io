@@ -91,6 +91,33 @@
             font-weight: 600;
         }
 
+        /* Apple-style floating music button */
+        .music-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            padding: 14px 18px;
+            border-radius: 50%;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: #fff;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+            transition: 0.25s;
+        }
+
+        .music-btn:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+        }
+
         /* Smooth fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -122,5 +149,29 @@
             <span class="email">GDmouse@hotmail.com</span>
         </p>
     </div>
+
+    <!-- Hidden audio player -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating music button -->
+    <button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+    <script>
+        let isPlaying = false;
+        const music = document.getElementById("bg-music");
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+            } else {
+                music.volume = 0.4;
+                music.play();
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+
 </body>
 </html>
