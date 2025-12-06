@@ -15,9 +15,9 @@
 <p>
 :Made by Github User __"Winnie247"__
 <p>
-Background picture from [unsplash.com](https://unsplash.com)
+Background picture from https://unsplash.com
 <p>
-:Some placeholder names inspired by [cobble918.com](https://cobble918.com) made by Github User __"Cobble918"__
+:Some placeholder names inspired by https://cobble918.com made by Github User __"Cobble918"__
 <p>
 
 ### Cool people
